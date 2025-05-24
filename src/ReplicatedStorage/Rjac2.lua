@@ -1,5 +1,7 @@
 --[[
     Made by: GiantDefender427
+
+    Github: https://github.com/SohamBorate/Rjac-2
 ]]
 
 --[=[
