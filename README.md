@@ -9,13 +9,13 @@ Rjac (pronounced as "r-jack") is an object-oriented module used to rotate charac
 
 For example:
 
-![Clip 1]()
+![Clip 1](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip1.gif)
 
-![Clip 2]()
+![Clip 2](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip2.gif)
 
-![Clip 3]()
+![Clip 3](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip3.gif)
 
-![Clip 4]()
+![Clip 4](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip4.gif)
 
 The mechanic is used in a lot of games and module is easy to use with simplicity, flexibilty, and customization.
 
@@ -249,7 +249,9 @@ local Configurations = {
 ```
 
 ## License 
-**Mozilla Public License 2.0**<br>
+
+**Mozilla Public License 2.0**
+
 Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.
 
 Read the full document [here](https://github.com/SohamBorate/Rjac-2/blob/main/LICENSE).
@@ -257,4 +259,4 @@ Read the full document [here](https://github.com/SohamBorate/Rjac-2/blob/main/LI
 ## Installation
 
 - Roblox model (recommended): [https://create.roblox.com/store/asset/90943490052798/Rjac2](https://create.roblox.com/store/asset/90943490052798/Rjac2)
-- Github Repository:
+- Github Repository: [https://github.com/SohamBorate/Rjac-2/releases](https://github.com/SohamBorate/Rjac-2/releases)
