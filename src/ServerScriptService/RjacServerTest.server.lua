@@ -107,6 +107,40 @@ PlayerService.PlayerAdded:Connect(function(Player)
         Unequipped = nil
     }
 
+    local function HumanoidDied()
+        PlayerConnections[Player.UserId].Equipped:Disconnect()
+        PlayerConnections[Player.UserId].Unequipped:Disconnect()
+        PlayerConnections[Player.UserId].HumanoidDied:Disconnect()
+
+        if Humanoid.RigType == Enum.HumanoidRigType.R15 then
+            Profile:RemoveBodyJoint("RightUpperArm", "RightShoulder")
+        elseif Humanoid.RigType == Enum.HumanoidRigType.R6 then
+            Profile:RemoveBodyJoint("Torso", "Right Shoulder")
+        end
+
+        Player.CharacterAdded:Wait()
+        Humanoid = Player.Character:WaitForChild("Humanoid")
+        Tool = Player:WaitForChild("Backpack"):WaitForChild("Gun")
+
+        PlayerConnections[Player.UserId].Equipped = Tool.Equipped:Connect(function()
+            if Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                Profile:AddBodyJoint("RightUpperArm", "RightShoulder", Vector3.new(1, 0, 0), {"Y", "X", "Z"})
+            elseif Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                Profile:AddBodyJoint("Torso", "Right Shoulder", Vector3.new(0, 0, 1), {"Y", "X", "Y"})
+            end
+        end)
+
+        PlayerConnections[Player.UserId].Unequipped = Tool.Unequipped:Connect(function()
+            if Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                Profile:RemoveBodyJoint("RightUpperArm", "RightShoulder")
+            elseif Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                Profile:RemoveBodyJoint("Torso", "Right Shoulder")
+            end
+        end)
+
+        PlayerConnections[Player.UserId].HumanoidDied = Humanoid.Died:Connect(HumanoidDied)
+    end
+
     PlayerConnections[Player.UserId].Equipped = Tool.Equipped:Connect(function()
         if Humanoid.RigType == Enum.HumanoidRigType.R15 then
             Profile:AddBodyJoint("RightUpperArm", "RightShoulder", Vector3.new(1, 0, 0), {"Y", "X", "Z"})
@@ -123,12 +157,16 @@ PlayerService.PlayerAdded:Connect(function(Player)
         end
     end)
 
+    PlayerConnections[Player.UserId].HumanoidDied = Humanoid.Died:Connect(HumanoidDied)
+
+    Profile:ResetJointOffsets(Humanoid.Parent)
     Profile.Enabled = true
 end)
 
 PlayerService.PlayerRemoving:Connect(function(Player)
     PlayerConnections[Player.UserId].Equipped:Disconnect()
     PlayerConnections[Player.UserId].Unequipped:Disconnect()
+    PlayerConnections[Player.UserId].HumanoidDied:Disconnect()
     RjacProfiles[Player.UserId]:Destroy()
 end)
 

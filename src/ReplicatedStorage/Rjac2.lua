@@ -241,6 +241,11 @@ function Rjac:Update(CameraCFrame)
         return
     end
 
+    if self.Character.Humanoid.Health <= 0 then
+        self:warn("Character is dead")
+        return
+    end
+
     for _,v in pairs(self.JointConfigurations) do
         -- Drops unnecesarry errors when character is being removed or player is leaving, kind of stupid to add "if"s every now and then, "pcall" is better
         local BodyPart = self.Player.Character:FindFirstChild(v.BodyPart)
