@@ -9,13 +9,13 @@ Rjac (pronounced as "r-jack") is an object-oriented module used to rotate charac
 
 For example:
 
-![Clip 1](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip1.gif)
+![Clip 1](https://i.gyazo.com/c68eff86a11f756a4dc47937001afb50.gif)
 
-![Clip 2](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip2.gif)
+![Clip 2](https://i.gyazo.com/f8fdf62ef42f4e20131fec93c163ae8c.gif)
 
-![Clip 3](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip3.gif)
+![Clip 3](https://i.gyazo.com/c8cdbb3203f53bea95f2f4d464cb5db9.gif)
 
-![Clip 4](https://raw.githubusercontent.com/SohamBorate/Rjac-2/refs/heads/main/Clips/Clip4.gif)
+![Clip 4](https://i.gyazo.com/d773957aedcffa65ba2412e287937c81.gif)
 
 The mechanic is used in a lot of games and module is easy to use with simplicity, flexibilty, and customization.
 
@@ -170,6 +170,10 @@ local Configurations = {
     }
 }
 ```
+
+## Github
+
+[https://github.com/SohamBorate/Rjac-2](https://github.com/SohamBorate/Rjac-2)
 
 ## License 
 
