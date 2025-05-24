@@ -1,2 +1,9 @@
 gitSourceBranch = "main"
+gitRepoUrl = "https://github.com/SohamBorate/Rjac-2" # From Git
 title = "Rjac 2"
+
+organizationName = "Soham Borate"
+projectName = "Rjac 2"
+url = "https://SohamBorate.github.io"
+baseUrl = "/Rjac-2"
+tagline = "Rotating Joints According to Camera"
