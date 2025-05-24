@@ -24,13 +24,13 @@ The mechanic is used in a lot of games and module is easy to use with simplicity
 - Better design
 - Cleaner code
 
-## Demo (unlocked)
+## Demo
 
 Try it for yourself as a player. Run around looking in different directions and your avatar's head will turn as well. Equip the gun and then even the right arm starts rotating.
 
 Game is open for both R6 and R15 **at the same time**.
 
-The `.rbxl` file can be downloaded, it is also available in the Github repository.
+The `.rbxl` file can be downloaded from the Github repository.
 
 [https://www.roblox.com/games/124920330844766/Rjac-2-Demo](https://www.roblox.com/games/124920330844766/Rjac-2-Demo)
 
