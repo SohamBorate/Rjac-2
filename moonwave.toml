@@ -1,5 +1,6 @@
 gitSourceBranch = "main"
 title = "Rjac 2"
+gitRepoUrl = "https://github.com/SohamBorate/Rjac-2"
 
 organizationName = "Soham Borate"
 projectName = "Rjac 2"
