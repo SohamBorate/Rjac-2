@@ -176,9 +176,9 @@ end)
 ```
 Now let's break this down a bit and see what it means
 
-- `BodyPart` i.e `"Head"` is the name of the [`BasePart`](https://developer.roblox.com/en-us/api-reference/class/BasePart) in the `Character`
-- where Rjac will find a [`Motor6D`](https://developer.roblox.com/en-us/api-reference/class/Motor6D), named the value of `BodyJoint` i.e `"Neck"`.
-- `MultiplierVector` is the [`Vector3`](https://developer.roblox.com/en-us/api-reference/datatype/Vector3), which determines by what value the joint will be rotated.
+- `BodyPart` i.e `"Head"` is the name of the [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart) in the `Character`
+- where Rjac will find a [`Motor6D`](https://create.roblox.com/docs/reference/engine/classes/Motor6D), named the value of `BodyJoint` i.e `"Neck"`.
+- `MultiplierVector` is the [`Vector3`](https://create.roblox.com/docs/reference/engine/datatypes/Vector3), which determines by what value the joint will be rotated.
 - `LookVectorAxes` specifies which axis of `CameraCFrame.LookVector` affects the joint rotations
 
 There is only one way of fully understanding how to use this, which is by experimenting with the module itself.
